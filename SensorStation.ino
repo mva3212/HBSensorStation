@@ -67,7 +67,7 @@ void loop()
   ssp.light = sensor.calcLux();
   sensor.poweroff(); // Power off when we've got the data.
 
-  if(DEBUG) int_to_serial();
+  if(DEBUG) print_to_serial();
   send_rf_data();
   sleepForSeconds(10);
 }
